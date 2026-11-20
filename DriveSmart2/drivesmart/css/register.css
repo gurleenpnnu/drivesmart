@@ -1,0 +1,68 @@
+/* register.css - Member 3 - styles for register.html */
+
+.register-box {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.register-box fieldset {
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 1px solid #e5e9f0;
+    border-radius: 14px;
+}
+
+.register-box legend {
+    padding: 0px 10px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #119b80;
+}
+
+/* two boxes in one row */
+.two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 20px;
+}
+
+.field-title {
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* radio button labels sit in one line */
+.form-group .option {
+    display: inline;
+    margin-right: 18px;
+    font-weight: 400;
+}
+
+.range {
+    width: 100%;
+}
+
+#expValue {
+    color: #119b80;
+}
+
+.grey-btn {
+    margin-left: 10px;
+    background-color: #e5e9f0;
+}
+
+
+@media (max-width: 768px) {
+    .register-box {
+        width: 100%;
+    }
+
+    .register-box fieldset {
+        padding: 18px;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+}

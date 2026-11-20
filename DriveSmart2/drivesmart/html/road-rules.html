@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- Road Rules page - made by Member 2 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Rules | DriveSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/road-rules.css">
+</head>
+
+<body>
+
+    <!-- navbar (same on every page) -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">D</span>
+            <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+        </a>
+        <button class="menu-btn" id="menuBtn">Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="road-rules.html" class="active">Road Rules</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-btn">Enroll Now</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <h1>Road <span>Rules</span></h1>
+            <p>Know the rules before you hit the road.</p>
+        </section>
+
+        <!-- traffic light -->
+        <section class="section">
+            <div class="heading">
+                <span class="tag">Try it</span>
+                <h2>Understand the <span>traffic signal.</span></h2>
+                <p>Click a button and see what each light means.</p>
+            </div>
+
+            <div class="signal-row">
+                <div class="signal">
+                    <div class="light" id="redLight"></div>
+                    <div class="light" id="yellowLight"></div>
+                    <div class="light" id="greenLight"></div>
+                </div>
+
+                <div class="signal-text">
+                    <h3>What should you do?</h3>
+                    <p>Most accidents at crossings happen because people jump the signal. Practice with the buttons below.</p>
+                    <p id="signalMessage">Click any button to start.</p>
+                    <button class="btn red-btn" id="redBtn">Red</button>
+                    <button class="btn yellow-btn" id="yellowBtn">Yellow</button>
+                    <button class="btn green-btn" id="greenBtn">Green</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- important rules -->
+        <section class="section grey-bg">
+            <div class="heading">
+                <span class="tag">Must know</span>
+                <h2>Important <span>road rules.</span></h2>
+            </div>
+
+            <dl class="rules">
+                <dt>1. Always wear a seat belt / helmet</dt>
+                <dd>Driver and all passengers must wear seat belts. Both riders on a two-wheeler must wear a helmet.</dd>
+
+                <dt>2. Follow the speed limit</dt>
+                <dd>Inside the city the limit is usually <strong>50 km/h</strong>. Near schools and hospitals it is <strong>25 km/h</strong>.</dd>
+
+                <dt>3. No mobile phone while driving</dt>
+                <dd>Using a phone while driving can lead to a fine of Rs. 5000. Park the car first if you need to call.</dd>
+
+                <dt>4. Keep left, overtake from right</dt>
+                <dd>In India we drive on the left side. Only overtake from the right side and give an indicator.</dd>
+
+                <dt>5. Never drink and drive</dt>
+                <dd>It is the most dangerous mistake on the road. Do not drive at all if you have been drinking.</dd>
+            </dl>
+        </section>
+
+        <!-- quiz -->
+        <section class="section">
+            <div class="heading">
+                <span class="tag">Quick quiz</span>
+                <h2>Test your <span>knowledge.</span></h2>
+                <p>Answer 3 easy questions and check your score.</p>
+            </div>
+
+            <div class="quiz">
+                <fieldset>
+                    <legend>Q1. What does a yellow light mean?</legend>
+                    <label><input type="radio" name="q1" id="q1a"> Speed up quickly</label>
+                    <label><input type="radio" name="q1" id="q1b"> Slow down and get ready to stop</label>
+                    <label><input type="radio" name="q1" id="q1c"> Turn left</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Q2. Which side of the road do we drive on in India?</legend>
+                    <label><input type="radio" name="q2" id="q2a"> Left side</label>
+                    <label><input type="radio" name="q2" id="q2b"> Right side</label>
+                    <label><input type="radio" name="q2" id="q2c"> Middle of the road</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Q3. What is the speed limit near a school?</legend>
+                    <label><input type="radio" name="q3" id="q3a"> 60 km/h</label>
+                    <label><input type="radio" name="q3" id="q3b"> 40 km/h</label>
+                    <label><input type="radio" name="q3" id="q3c"> 25 km/h</label>
+                </fieldset>
+
+                <button class="btn" id="quizBtn">Check Score</button>
+                <p id="quizResult"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer (same on every page) -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <div class="logo">
+                    <span class="logo-icon">D</span>
+                    <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+                </div>
+                <p>Learn smarter. Drive safer. Go further.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="road-rules.html">Road Rules</a></li>
+                    <li><a href="register.html">Enroll</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <address>
+                    GT Road, Jalandhar, Punjab<br>
+                    Phone: +91 98765 43210<br>
+                    Email: info@drivesmart.com
+                </address>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 DriveSmart. All rights reserved. | CSE326 Group Project</p>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/road-rules.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- Courses page - made by Member 2 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | DriveSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/courses.css">
+</head>
+
+<body>
+
+    <!-- navbar (same on every page) -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">D</span>
+            <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+        </a>
+        <button class="menu-btn" id="menuBtn">Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="road-rules.html">Road Rules</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-btn">Enroll Now</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <h1>Our <span>Courses</span></h1>
+            <p>Pick a course, check the fees and start learning.</p>
+        </section>
+
+        <!-- course cards -->
+        <section class="section">
+            <div class="heading">
+                <span class="tag">Programs</span>
+                <h2>Courses for <span>every learner.</span></h2>
+                <p>Every course has theory classes, ground practice and road training.</p>
+            </div>
+
+            <div class="course-grid">
+                <article class="course-card">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Car on road">
+                    <div class="course-info">
+                        <span class="level">01 / BEGINNER</span>
+                        <h3>Car Training</h3>
+                        <p>For people who have never driven a car before.</p>
+                        <ul>
+                            <li>Steering and gear control</li>
+                            <li>Parking and reversing</li>
+                            <li>City traffic driving</li>
+                            <li>Duration: 21 days</li>
+                        </ul>
+                        <p class="price">Rs. 6,500 <small>/ full course</small></p>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80" alt="Motorcycle">
+                    <div class="course-info">
+                        <span class="level">02 / PRACTICAL</span>
+                        <h3>Two-Wheeler Training</h3>
+                        <p>Scooter and bike riding for beginners.</p>
+                        <ul>
+                            <li>Balance and clutch control</li>
+                            <li>Turning and lane changing</li>
+                            <li>Helmet and safety rules</li>
+                            <li>Duration: 10 days</li>
+                        </ul>
+                        <p class="price">Rs. 3,000 <small>/ full course</small></p>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=900&q=80" alt="Modern car">
+                    <div class="course-info">
+                        <span class="level">03 / ADVANCED</span>
+                        <h3>Advanced Driving</h3>
+                        <p>For people who know driving but want more confidence.</p>
+                        <ul>
+                            <li>Highway and night driving</li>
+                            <li>Defensive driving</li>
+                            <li>Hill and rain driving tips</li>
+                            <li>Duration: 15 days</li>
+                        </ul>
+                        <p class="price">Rs. 8,000 <small>/ full course</small></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- fee table -->
+        <section class="section grey-bg">
+            <div class="heading">
+                <span class="tag">Fee Structure</span>
+                <h2>Simple and <span>clear fees.</span></h2>
+            </div>
+
+            <table class="fee-table">
+                <caption>Fees include fuel. Licence fee is paid separately at the RTO.</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Course</th>
+                        <th rowspan="2">Days</th>
+                        <th colspan="2">Batch Timing</th>
+                        <th rowspan="2">Fee (Rs.)</th>
+                    </tr>
+                    <tr>
+                        <th>Morning</th>
+                        <th>Evening</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Car Training</td>
+                        <td>21</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>6,500</td>
+                    </tr>
+                    <tr>
+                        <td>Two-Wheeler Training</td>
+                        <td>10</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>3,000</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Driving</td>
+                        <td>15</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>8,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Extra class (per day)</td>
+                        <td>300</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- fee calculator -->
+        <section class="section">
+            <div class="heading">
+                <span class="tag">Fee Calculator</span>
+                <h2>Check your <span>total fee.</span></h2>
+            </div>
+
+            <div class="calculator">
+                <div class="form-group">
+                    <label for="feeCourse">Select Course</label>
+                    <select id="feeCourse" class="input">
+                        <option value="">-- Select --</option>
+                        <option value="car">Car Training (Rs. 6500)</option>
+                        <option value="bike">Two-Wheeler Training (Rs. 3000)</option>
+                        <option value="advanced">Advanced Driving (Rs. 8000)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="extraClasses">Extra classes (Rs. 300 each)</label>
+                    <input type="number" id="extraClasses" class="input" min="0" max="10" placeholder="0">
+                </div>
+                <p class="check-row">
+                    <input type="checkbox" id="licenceHelp">
+                    <label for="licenceHelp">Add licence help package (Rs. 1500)</label>
+                </p>
+                <button class="btn" id="calcBtn">Calculate</button>
+                <p id="feeResult"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer (same on every page) -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <div class="logo">
+                    <span class="logo-icon">D</span>
+                    <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+                </div>
+                <p>Learn smarter. Drive safer. Go further.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="road-rules.html">Road Rules</a></li>
+                    <li><a href="register.html">Enroll</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <address>
+                    GT Road, Jalandhar, Punjab<br>
+                    Phone: +91 98765 43210<br>
+                    Email: info@drivesmart.com
+                </address>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 DriveSmart. All rights reserved. | CSE326 Group Project</p>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/courses.js"></script>
+</body>
+</html>

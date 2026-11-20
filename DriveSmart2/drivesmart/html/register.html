@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Register page - made by Member 3 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll | DriveSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+
+    <!-- navbar (same on every page) -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">D</span>
+            <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+        </a>
+        <button class="menu-btn" id="menuBtn">Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="road-rules.html">Road Rules</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-btn">Enroll Now</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <h1>Enroll <span>Now</span></h1>
+            <p>Fill the form below and start your driving journey.</p>
+        </section>
+
+        <section class="section">
+            <form class="register-box" id="registerForm" action="login.html">
+
+                <!-- personal details -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <div class="two-col">
+                        <div class="form-group">
+                            <label for="rName">Full Name *</label>
+                            <input type="text" id="rName" class="input" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="rEmail">Email *</label>
+                            <input type="email" id="rEmail" class="input" placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="rPhone">Mobile Number *</label>
+                            <input type="text" id="rPhone" class="input" placeholder="10 digit number" maxlength="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="rDob">Date of Birth *</label>
+                            <input type="date" id="rDob" class="input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p class="field-title">Gender</p>
+                        <label class="option"><input type="radio" name="gender" value="male"> Male</label>
+                        <label class="option"><input type="radio" name="gender" value="female"> Female</label>
+                        <label class="option"><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="rAddress">Address</label>
+                        <textarea id="rAddress" class="input" rows="3" placeholder="House no, street, city"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- course details -->
+                <fieldset>
+                    <legend>Course Details</legend>
+                    <div class="two-col">
+                        <div class="form-group">
+                            <label for="rCourse">Course *</label>
+                            <select id="rCourse" class="input">
+                                <option value="">-- Select course --</option>
+                                <option>Car Training</option>
+                                <option>Two-Wheeler Training</option>
+                                <option>Advanced Driving</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="rStart">Preferred Start Date</label>
+                            <input type="date" id="rStart" class="input">
+                        </div>
+                        <div class="form-group">
+                            <label for="rTime">Preferred Time</label>
+                            <input type="time" id="rTime" class="input" value="07:00">
+                        </div>
+                        <div class="form-group">
+                            <label for="rPhoto">Upload Photo</label>
+                            <input type="file" id="rPhoto" class="input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="rExp">Driving experience: <span id="expValue">0 months</span></label>
+                        <input type="range" id="rExp" class="range" min="0" max="24" step="1" value="0">
+                    </div>
+                </fieldset>
+
+                <!-- account -->
+                <fieldset>
+                    <legend>Create Account</legend>
+                    <div class="two-col">
+                        <div class="form-group">
+                            <label for="rPass">Password *</label>
+                            <input type="password" id="rPass" class="input" placeholder="At least 6 characters">
+                        </div>
+                        <div class="form-group">
+                            <label for="rConfirm">Confirm Password *</label>
+                            <input type="password" id="rConfirm" class="input" placeholder="Type password again">
+                        </div>
+                    </div>
+                    <p>
+                        <input type="checkbox" id="rTerms">
+                        <label for="rTerms">I agree to the terms and conditions</label>
+                    </p>
+                </fieldset>
+
+                <input type="submit" value="Register" class="btn">
+                <input type="reset" value="Clear Form" class="btn grey-btn">
+            </form>
+        </section>
+
+    </main>
+
+    <!-- footer (same on every page) -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <div class="logo">
+                    <span class="logo-icon">D</span>
+                    <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+                </div>
+                <p>Learn smarter. Drive safer. Go further.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="road-rules.html">Road Rules</a></li>
+                    <li><a href="register.html">Enroll</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <address>
+                    GT Road, Jalandhar, Punjab<br>
+                    Phone: +91 98765 43210<br>
+                    Email: info@drivesmart.com
+                </address>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 DriveSmart. All rights reserved. | CSE326 Group Project</p>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>

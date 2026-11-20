@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- Contact page - made by Member 1 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | DriveSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+
+    <!-- navbar (same on every page) -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">D</span>
+            <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+        </a>
+        <button class="menu-btn" id="menuBtn">Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="road-rules.html">Road Rules</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-btn">Enroll Now</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <h1>Contact <span>Us</span></h1>
+            <p>Have a question? We are happy to help.</p>
+        </section>
+
+        <section class="section contact-row">
+
+            <!-- left side : details -->
+            <div class="contact-info">
+                <span class="tag">Get in touch</span>
+                <h3>DriveSmart Driving Academy</h3>
+                <address>
+                    GT Road, Near Bus Stand<br>
+                    Jalandhar, Punjab - 144001<br>
+                    Phone: +91 98765 43210<br>
+                    Email: <a href="mailto:info@drivesmart.com">info@drivesmart.com</a>
+                </address>
+
+                <table class="timing-table">
+                    <tr>
+                        <th>Day</th>
+                        <th>Timing</th>
+                    </tr>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>7:00 AM - 8:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>7:00 AM - 5:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- right side : enquiry form -->
+            <form class="contact-form" id="contactForm" action="index.html">
+                <h3>Send us an enquiry</h3>
+                <br>
+                <div class="form-group">
+                    <label for="cName">Full Name *</label>
+                    <input type="text" id="cName" class="input" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="cPhone">Phone Number *</label>
+                    <input type="text" id="cPhone" class="input" placeholder="10 digit mobile number" maxlength="10">
+                </div>
+                <div class="form-group">
+                    <label for="cEmail">Email *</label>
+                    <input type="email" id="cEmail" class="input" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="cCourse">Course *</label>
+                    <select id="cCourse" class="input">
+                        <option value="">-- Select a course --</option>
+                        <option>Car Training</option>
+                        <option>Two-Wheeler Training</option>
+                        <option>Advanced Driving</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cMsg">Message</label>
+                    <textarea id="cMsg" class="input" rows="4" placeholder="Write your question here"></textarea>
+                </div>
+                <input type="submit" value="Send Enquiry" class="btn">
+            </form>
+        </section>
+
+        <!-- map -->
+        <section class="map-box">
+            <iframe src="https://maps.google.com/maps?q=Jalandhar%20Punjab&output=embed" title="DriveSmart location"></iframe>
+        </section>
+
+        <!-- faq -->
+        <section class="section">
+            <div class="heading">
+                <span class="tag">FAQ</span>
+                <h2>Common <span>questions.</span></h2>
+                <p>Click on a question to see the answer.</p>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What is the minimum age to join? +</button>
+                <p class="faq-answer">16 years for two-wheeler (without gear) and 18 years for car training.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do I need a learner licence first? +</button>
+                <p class="faq-answer">No, you can start the theory classes first. We will help you apply for the learner licence.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I choose my own timing? +</button>
+                <p class="faq-answer">Yes, you can pick morning, afternoon or evening batch while registering.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Is there a free trial class? +</button>
+                <p class="faq-answer">Yes, the first class is free. Just call us or send an enquiry.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer (same on every page) -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <div class="logo">
+                    <span class="logo-icon">D</span>
+                    <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+                </div>
+                <p>Learn smarter. Drive safer. Go further.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="road-rules.html">Road Rules</a></li>
+                    <li><a href="register.html">Enroll</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <address>
+                    GT Road, Jalandhar, Punjab<br>
+                    Phone: +91 98765 43210<br>
+                    Email: info@drivesmart.com
+                </address>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 DriveSmart. All rights reserved. | CSE326 Group Project</p>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

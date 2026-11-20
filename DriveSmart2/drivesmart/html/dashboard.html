@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- Dashboard page - made by Member 3 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | DriveSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- navbar (same on every page) -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">D</span>
+            <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+        </a>
+        <button class="menu-btn" id="menuBtn">Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="road-rules.html">Road Rules</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-btn">Enroll Now</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+
+        <!-- top bar -->
+        <section class="dash-top">
+            <div>
+                <h1 id="welcomeName">Welcome</h1>
+                <p id="todayDate"></p>
+            </div>
+            <a href="login.html" class="btn" id="logoutBtn">Logout</a>
+        </section>
+
+        <!-- small cards -->
+        <section class="dash-cards">
+            <div class="dash-card">
+                <p>Total Learners</p>
+                <h2 id="learnerCount">0</h2>
+            </div>
+            <div class="dash-card">
+                <p>Instructors</p>
+                <h2>3</h2>
+            </div>
+            <div class="dash-card">
+                <p>Vehicles</p>
+                <h2>4</h2>
+            </div>
+            <div class="dash-card">
+                <p>Classes Today</p>
+                <h2>12</h2>
+            </div>
+        </section>
+
+        <!-- learners -->
+        <section class="panel">
+            <h2>Learners</h2>
+
+            <div class="add-form">
+                <div class="form-group">
+                    <label for="newName">Name</label>
+                    <input type="text" id="newName" class="input" placeholder="Learner name">
+                </div>
+                <div class="form-group">
+                    <label for="newPhone">Phone</label>
+                    <input type="text" id="newPhone" class="input" placeholder="10 digit number" maxlength="10">
+                </div>
+                <div class="form-group">
+                    <label for="newCourse">Course</label>
+                    <select id="newCourse" class="input">
+                        <option value="">-- Select --</option>
+                        <option>Car Training</option>
+                        <option>Two-Wheeler Training</option>
+                        <option>Advanced Driving</option>
+                    </select>
+                </div>
+                <button class="btn" id="addBtn">Add Learner</button>
+            </div>
+
+            <input type="text" id="searchBox" class="input search" placeholder="Search learner by name...">
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Course</th>
+                        <th>Progress</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="learnerBody">
+                    <tr>
+                        <td>Aman Sharma</td>
+                        <td>9876543210</td>
+                        <td>Car Training</td>
+                        <td><progress value="75" max="100"></progress> 75%</td>
+                        <td><button class="delete-btn">Remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>Simran Kaur</td>
+                        <td>9876501234</td>
+                        <td>Two-Wheeler Training</td>
+                        <td><progress value="45" max="100"></progress> 45%</td>
+                        <td><button class="delete-btn">Remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>Karan Mehta</td>
+                        <td>9812345678</td>
+                        <td>Advanced Driving</td>
+                        <td><progress value="20" max="100"></progress> 20%</td>
+                        <td><button class="delete-btn">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- vehicles -->
+        <section class="panel">
+            <h2>Vehicles</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Company</th>
+                        <th>Model</th>
+                        <th>Number</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Car</td>
+                        <td>Maruti Suzuki</td>
+                        <td>Swift</td>
+                        <td>PB08 AB 1234</td>
+                        <td><span class="status available">Available</span></td>
+                    </tr>
+                    <tr>
+                        <td>Car</td>
+                        <td>Hyundai</td>
+                        <td>i20</td>
+                        <td>PB08 CD 5678</td>
+                        <td><span class="status in-use">In Use</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bike</td>
+                        <td>Honda</td>
+                        <td>Shine</td>
+                        <td>PB08 EF 9012</td>
+                        <td><span class="status available">Available</span></td>
+                    </tr>
+                    <tr>
+                        <td>Scooter</td>
+                        <td>TVS</td>
+                        <td>Jupiter</td>
+                        <td>PB08 GH 3456</td>
+                        <td><span class="status repair">Maintenance</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- footer (same on every page) -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <div class="logo">
+                    <span class="logo-icon">D</span>
+                    <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+                </div>
+                <p>Learn smarter. Drive safer. Go further.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="road-rules.html">Road Rules</a></li>
+                    <li><a href="register.html">Enroll</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <address>
+                    GT Road, Jalandhar, Punjab<br>
+                    Phone: +91 98765 43210<br>
+                    Email: info@drivesmart.com
+                </address>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 DriveSmart. All rights reserved. | CSE326 Group Project</p>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

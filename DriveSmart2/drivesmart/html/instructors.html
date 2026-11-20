@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- Instructors page - made by Member 2 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructors | DriveSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/instructors.css">
+</head>
+
+<body>
+
+    <!-- navbar (same on every page) -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">D</span>
+            <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+        </a>
+        <button class="menu-btn" id="menuBtn">Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="instructors.html" class="active">Instructors</a>
+            <a href="road-rules.html">Road Rules</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-btn">Enroll Now</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <h1>Our <span>Instructors</span></h1>
+            <p>Friendly guidance from trained driving professionals.</p>
+        </section>
+
+        <!-- instructor cards -->
+        <section class="section">
+            <div class="heading">
+                <span class="tag">Meet the team</span>
+                <h2>Learn from the <span>experts.</span></h2>
+            </div>
+
+            <div class="teacher-grid">
+                <article class="teacher-card">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=80" alt="Gurpreet Singh">
+                    <h3>Gurpreet Singh</h3>
+                    <p class="role">Car Training Specialist</p>
+                    <p class="exp">8 years experience</p>
+                    <p class="bio">
+                        Gurpreet sir has trained more than 200 learners. He is known for
+                        being very calm, even when the learner makes a mistake.
+                    </p>
+                    <button class="small-btn bio-btn">Read More</button>
+                </article>
+
+                <article class="teacher-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Rohit Verma">
+                    <h3>Rohit Verma</h3>
+                    <p class="role">Road Safety Trainer</p>
+                    <p class="exp">6 years experience</p>
+                    <p class="bio">
+                        Rohit takes our theory classes on signs and signals. He also
+                        handles two-wheeler training and helmet safety.
+                    </p>
+                    <button class="small-btn bio-btn">Read More</button>
+                </article>
+
+                <article class="teacher-card">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80" alt="Harjeet Sandhu">
+                    <h3>Harjeet Sandhu</h3>
+                    <p class="role">Advanced Driving Coach</p>
+                    <p class="exp">12 years experience</p>
+                    <p class="bio">
+                        Harjeet was a professional driver before joining us. He teaches
+                        highway, night and defensive driving.
+                    </p>
+                    <button class="small-btn bio-btn">Read More</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- weekly schedule -->
+        <section class="section grey-bg">
+            <div class="heading">
+                <span class="tag">Availability</span>
+                <h2>Weekly <span>schedule.</span></h2>
+                <p>Check when your instructor is free before booking a class.</p>
+            </div>
+
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Instructor</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gurpreet Singh</td>
+                        <td class="free">Free</td>
+                        <td class="full">Full</td>
+                        <td class="free">Free</td>
+                        <td class="free">Free</td>
+                        <td class="full">Full</td>
+                        <td class="free">Free</td>
+                    </tr>
+                    <tr>
+                        <td>Rohit Verma</td>
+                        <td class="full">Full</td>
+                        <td class="free">Free</td>
+                        <td class="free">Free</td>
+                        <td class="full">Full</td>
+                        <td class="free">Free</td>
+                        <td class="full">Full</td>
+                    </tr>
+                    <tr>
+                        <td>Harjeet Sandhu</td>
+                        <td class="free">Free</td>
+                        <td class="free">Free</td>
+                        <td class="full">Full</td>
+                        <td class="free">Free</td>
+                        <td class="free">Free</td>
+                        <td class="full">Full</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- video -->
+        <section class="section video-box">
+            <div class="heading">
+                <span class="tag">Inside a class</span>
+                <h2>See how we <span>teach.</span></h2>
+            </div>
+            <video controls>
+                <source src="../videos/lesson.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>A learner practising with our instructor</p>
+        </section>
+
+    </main>
+
+    <!-- footer (same on every page) -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <div class="logo">
+                    <span class="logo-icon">D</span>
+                    <span>DriveSmart<br><small>DRIVING ACADEMY</small></span>
+                </div>
+                <p>Learn smarter. Drive safer. Go further.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="road-rules.html">Road Rules</a></li>
+                    <li><a href="register.html">Enroll</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <address>
+                    GT Road, Jalandhar, Punjab<br>
+                    Phone: +91 98765 43210<br>
+                    Email: info@drivesmart.com
+                </address>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 DriveSmart. All rights reserved. | CSE326 Group Project</p>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/instructors.js"></script>
+</body>
+</html>

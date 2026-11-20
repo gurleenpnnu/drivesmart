@@ -1,0 +1,124 @@
+/* instructors.css - Member 2 - styles for instructors.html */
+
+/* ---------- instructor cards ---------- */
+
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.teacher-card {
+    padding-bottom: 25px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 25px #e5e9f0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.teacher-card:hover {
+    transform: scale(1.03);
+}
+
+.teacher-card img {
+    height: 300px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.teacher-card h3 {
+    margin-top: 18px;
+}
+
+.role {
+    font-size: 14px;
+    font-weight: 600;
+    color: #119b80;
+}
+
+.exp {
+    margin: 8px 0px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* bio is hidden at first, js shows it */
+.bio {
+    display: none;
+    margin-bottom: 12px;
+    padding: 0px 25px;
+    font-size: 14px;
+    color: #475569;
+}
+
+
+/* ---------- schedule table ---------- */
+
+.schedule-table {
+    width: 100%;
+    background-color: #d5dbe5;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 14px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.schedule-table th {
+    background-color: #101828;
+    color: #ffffff;
+}
+
+.schedule-table .free {
+    background-color: #dcfce7;
+    color: #15803d;
+    font-weight: 700;
+}
+
+.schedule-table .full {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    font-weight: 700;
+}
+
+
+/* ---------- video ---------- */
+
+.video-box {
+    text-align: center;
+}
+
+.video-box video {
+    width: 70%;
+    border-radius: 16px;
+}
+
+.video-box p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+
+@media (max-width: 992px) {
+    .teacher-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .teacher-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 8px 3px;
+        font-size: 12px;
+    }
+
+    .video-box video {
+        width: 100%;
+    }
+}

@@ -1,0 +1,122 @@
+/* contact.css - Member 1 - styles for contact.html */
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+}
+
+.contact-info address {
+    margin-bottom: 25px;
+    font-style: normal;
+    line-height: 2;
+}
+
+.contact-info a {
+    color: #119b80;
+}
+
+/* the grey table background shows as thin lines between the cells */
+.timing-table {
+    width: 100%;
+    background-color: #e5e9f0;
+}
+
+.timing-table th,
+.timing-table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.timing-table th {
+    background-color: #101828;
+    color: #ffffff;
+}
+
+.timing-table td {
+    background-color: #ffffff;
+}
+
+.contact-form {
+    width: 60%;
+    padding: 35px;
+    border-radius: 16px;
+    background-color: #f5f7fa;
+}
+
+
+/* map */
+
+.map-box {
+    padding: 0px 8%;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 16px;
+}
+
+
+/* faq */
+
+.faq-item {
+    width: 70%;
+    margin: 0px auto 15px auto;
+    border: 1px solid #e5e9f0;
+    border-radius: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.faq-question:hover {
+    color: #119b80;
+}
+
+/* answers are hidden at first, js shows them */
+.faq-answer {
+    display: none;
+    padding: 0px 20px 18px 20px;
+    color: #64748b;
+}
+
+
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form,
+    .faq-item {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .map-box {
+        padding: 0px 6%;
+    }
+}

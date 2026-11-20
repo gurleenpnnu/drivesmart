@@ -1,0 +1,332 @@
+/*
+    common.css - Member 1
+    styles that every page uses:
+    navbar, buttons, page banner, headings, form boxes, footer
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    color: #101828;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #101828;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ---------- navbar ---------- */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 15px #e5e9f0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.logo small {
+    font-size: 10px;
+    color: #64748b;
+}
+
+.logo-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    background-color: #20c7a5;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 43px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #119b80;
+}
+
+.nav-links .active {
+    color: #119b80;
+}
+
+.nav-links .nav-btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background-color: #101828;
+    color: #ffffff;
+}
+
+.nav-links .nav-btn:hover {
+    background-color: #119b80;
+    color: #ffffff;
+}
+
+.menu-btn {
+    display: none;
+    padding: 8px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+
+
+/* ---------- buttons ---------- */
+
+.btn {
+    display: inline-block;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #20c7a5;
+    color: #101828;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #101828;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.small-btn {
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1px solid #20c7a5;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #119b80;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.small-btn:hover {
+    background-color: #20c7a5;
+    color: #ffffff;
+}
+
+
+/* ---------- section and heading ---------- */
+
+.section {
+    padding: 80px 8%;
+}
+
+.grey-bg {
+    background-color: #f5f7fa;
+}
+
+.tag {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #119b80;
+}
+
+.heading {
+    width: 70%;
+    margin: 0px auto 45px auto;
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 40px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.heading h2 span {
+    color: #119b80;
+}
+
+.heading p {
+    color: #64748b;
+}
+
+
+/* ---------- page banner (top of every inner page) ---------- */
+
+.page-banner {
+    padding: 70px 8%;
+    background-color: #101828;
+    color: #ffffff;
+    text-align: center;
+}
+
+.page-banner h1 {
+    font-size: 46px;
+}
+
+.page-banner h1 span {
+    color: #20c7a5;
+}
+
+.page-banner p {
+    color: #c0ccdc;
+}
+
+
+/* ---------- form boxes (used on many pages) ---------- */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+
+/* ---------- footer ---------- */
+
+.footer {
+    padding: 60px 8% 25px 8%;
+    background-color: #101828;
+    color: #c0ccdc;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer p,
+.footer li,
+.footer address {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.footer a {
+    color: #c0ccdc;
+}
+
+.footer a:hover {
+    color: #20c7a5;
+}
+
+.footer .logo {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer hr {
+    margin: 35px 0px 20px 0px;
+    border: 1px solid #2c3a52;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* ---------- mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    /* hidden on mobile, js shows it when Menu is clicked */
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding-top: 15px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .heading h2 {
+        font-size: 30px;
+    }
+
+    .page-banner h1 {
+        font-size: 34px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,155 @@
+/* courses.css - Member 2 - styles for courses.html */
+
+/* ---------- course cards ---------- */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.course-card {
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 25px #e5e9f0;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+.course-card img {
+    height: 220px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.course-info {
+    padding: 25px;
+}
+
+.level {
+    font-size: 12px;
+    font-weight: 800;
+    color: #119b80;
+}
+
+.course-info h3 {
+    margin: 6px 0px;
+    font-size: 22px;
+}
+
+.course-info p {
+    color: #64748b;
+}
+
+.course-info ul {
+    margin: 15px 0px;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.course-info li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.course-info .price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #101828;
+}
+
+.price small {
+    font-size: 13px;
+    font-weight: 400;
+    color: #64748b;
+}
+
+
+/* ---------- fee table ---------- */
+
+/* the grey table background shows as thin lines between the cells */
+.fee-table {
+    width: 100%;
+    background-color: #d5dbe5;
+}
+
+.fee-table caption {
+    padding: 10px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.fee-table th,
+.fee-table td {
+    padding: 14px;
+    text-align: center;
+}
+
+.fee-table th {
+    background-color: #101828;
+    color: #ffffff;
+}
+
+.fee-table td {
+    background-color: #ffffff;
+}
+
+.fee-table tr:hover td {
+    background-color: #e6faf5;
+}
+
+.fee-table tfoot td {
+    font-weight: 700;
+}
+
+
+/* ---------- calculator ---------- */
+
+.calculator {
+    width: 50%;
+    margin: 0px auto;
+    padding: 35px;
+    border-radius: 16px;
+    background-color: #f5f7fa;
+}
+
+.check-row {
+    margin-bottom: 20px;
+}
+
+#feeResult {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #119b80;
+}
+
+
+@media (max-width: 992px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .calculator {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fee-table th,
+    .fee-table td {
+        padding: 8px 4px;
+        font-size: 13px;
+    }
+
+    .calculator {
+        width: 100%;
+        padding: 25px;
+    }
+}

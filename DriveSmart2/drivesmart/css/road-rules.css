@@ -1,0 +1,136 @@
+/* road-rules.css - Member 2 - styles for road-rules.html */
+
+/* ---------- traffic light ---------- */
+
+.signal-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+/* black box of the signal */
+.signal {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #101828;
+}
+
+/* the 3 lights - grey when off */
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #3a3a3a;
+    transition: 0.3s;
+}
+
+.signal-text {
+    width: 45%;
+}
+
+.signal-text h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+#signalMessage {
+    margin: 15px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f5f7fa;
+    font-weight: 700;
+}
+
+.red-btn {
+    background-color: #ef4444;
+    color: #ffffff;
+}
+
+.yellow-btn {
+    background-color: #facc15;
+}
+
+.green-btn {
+    background-color: #22c55e;
+    color: #ffffff;
+}
+
+
+/* ---------- rules list ---------- */
+
+.rules {
+    width: 70%;
+    margin: 0px auto;
+}
+
+.rules dt {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.rules dd {
+    margin-top: 6px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #64748b;
+}
+
+
+/* ---------- quiz ---------- */
+
+.quiz {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.quiz fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e5e9f0;
+    border-radius: 12px;
+}
+
+.quiz legend {
+    padding: 0px 8px;
+    font-weight: 700;
+}
+
+.quiz label {
+    display: block;
+    margin: 6px 0px;
+}
+
+#quizResult {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+@media (max-width: 768px) {
+    .signal-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .light {
+        width: 60px;
+        height: 60px;
+    }
+
+    .signal-text,
+    .rules,
+    .quiz {
+        width: 100%;
+    }
+
+    .signal-text .btn {
+        margin-top: 8px;
+    }
+}

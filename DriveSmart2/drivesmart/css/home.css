@@ -1,0 +1,254 @@
+/* home.css - Member 1 - styles for the home page (index.html) */
+
+/* ---------- hero ---------- */
+
+.hero {
+    padding: 100px 8%;
+    background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-box {
+    width: 55%;
+    padding: 45px;
+    border-radius: 20px;
+    background-color: #101828;
+    color: #ffffff;
+    animation: slideUp 1s;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.hero-tag {
+    font-size: 12px;
+    font-weight: 800;
+    color: #20c7a5;
+}
+
+.hero h1 {
+    margin: 15px 0px;
+    font-size: 50px;
+    line-height: 1.15;
+}
+
+.hero h1 span {
+    color: #20c7a5;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    color: #d0d9e7;
+}
+
+.white-btn {
+    margin-left: 10px;
+    background-color: #ffffff;
+}
+
+#greeting {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #ffc75e;
+}
+
+
+/* ---------- stats ---------- */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 8%;
+    background-color: #101828;
+    text-align: center;
+}
+
+.stats h2 {
+    font-size: 34px;
+    color: #20c7a5;
+}
+
+.stats p {
+    font-size: 14px;
+    color: #c0ccdc;
+}
+
+
+/* ---------- why choose us ---------- */
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.why-box {
+    padding: 35px 28px;
+    border: 1px solid #e5e9f0;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.why-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 15px 30px #e5e9f0;
+}
+
+.why-box .number {
+    font-size: 30px;
+    font-weight: 800;
+    color: #20c7a5;
+}
+
+.why-box h3 {
+    margin: 8px 0px;
+}
+
+.why-box p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* ---------- course cards on home ---------- */
+
+.home-courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.home-card {
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 25px #e5e9f0;
+    transition: 0.3s;
+}
+
+.home-card:hover {
+    transform: translateY(-8px);
+}
+
+.home-card img {
+    height: 220px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.home-card-text {
+    padding: 25px;
+}
+
+.home-card-text p {
+    margin: 8px 0px 18px 0px;
+    color: #64748b;
+}
+
+
+/* ---------- review ---------- */
+
+.review {
+    text-align: center;
+}
+
+.review blockquote {
+    width: 65%;
+    margin: 0px auto;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.review cite {
+    display: block;
+    margin-top: 18px;
+    font-style: normal;
+    font-weight: 700;
+    color: #119b80;
+}
+
+
+/* ---------- call to action ---------- */
+
+.cta {
+    padding: 80px 8%;
+    background-color: #20c7a5;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 40px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+.dark-btn {
+    background-color: #101828;
+    color: #ffffff;
+}
+
+.dark-btn:hover {
+    background-color: #ffffff;
+    color: #101828;
+}
+
+
+/* ---------- mobile ---------- */
+
+@media (max-width: 992px) {
+    .hero-box {
+        width: 80%;
+    }
+
+    .why-grid,
+    .home-courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero-box {
+        width: 100%;
+        padding: 30px 22px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .white-btn {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .why-grid,
+    .home-courses {
+        grid-template-columns: 1fr;
+    }
+
+    .review blockquote {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+}
